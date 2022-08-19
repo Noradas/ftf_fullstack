@@ -7,7 +7,7 @@ import axios from "axios";
 const Home = ()=> {
 	const [data, setData] = useState([]);
 	const loadData = async () => {
-		const response = await axios.get("http://localhost:5000/api/get");
+		const response = await axios.get("https://sheltered-refuge-66537.herokuapp.com/api/get");
 		setData(response.data);
 	};
 
@@ -18,7 +18,7 @@ const Home = ()=> {
 	const deletePlayer = (id) =>{
 		if(window.confirm ("Are you sure that you wanted to delete that player ?")){
 			
-		axios.delete(`http://localhost:5000/api/remove/${id}`);
+		axios.delete(`https://sheltered-refuge-66537.herokuapp.com/api/remove/${id}`);
 
 		toast.success("Contact Deleted Successfully");
 		setTimeout(()=> loadData(), 500);

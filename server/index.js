@@ -5,10 +5,10 @@ const mysql = require("mysql2");
 const cors = require("cors");
 
 const db = mysql.createPool({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "team",
+    host: "mysql-noradas.alwaysdata.net",
+    user: "noradas",
+    password: "noradas@12345",
+    database: "noradas_ftftfullstack",
 
 
 });

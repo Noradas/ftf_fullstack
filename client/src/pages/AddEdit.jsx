@@ -20,7 +20,7 @@ const AddEdit = () =>{
 	const {id} = useParams();
 
 	useEffect(()=>{
-		axios.get(`http://localhost:5000/api/get/${id}`).then((resp)=> setState({...resp.data[0]}));
+		axios.get(`https://sheltered-refuge-66537.herokuapp.com/api/get/${id}`).then((resp)=> setState({...resp.data[0]}));
 	},[id]);
 
 	const handleSubmit = (e) =>{
@@ -31,7 +31,7 @@ const AddEdit = () =>{
 		} else {
 		 if(!id){
 			axios
-				.post("http://localhost:5000/api/post", {
+				.post("https://sheltered-refuge-66537.herokuapp.com/api/post", {
 					name,
 					lastname,
 					wins,
@@ -39,7 +39,7 @@ const AddEdit = () =>{
 			})
 			.then(()=>{
 				setState({name: "", lastname: "", wins: "", losses: ""});
-				window.location('http://localhost:5000/')
+				window.location('https://sheltered-refuge-66537.herokuapp.com/')
 			}).catch((err)=> toast.error(err.response.data));
 			// nav(, { replace: true })
 			
@@ -47,7 +47,7 @@ const AddEdit = () =>{
 			toast.success("Player added successfully");
 		 } else {
 			axios
-				.put(`http://localhost:5000/api/update/${id}`, {
+				.put(`https://sheltered-refuge-66537.herokuapp.com/api/update/${id}`, {
 					name,
 					lastname,
 					wins,
