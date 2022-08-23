@@ -1,5 +1,5 @@
 # fullstack1
-Ce projet consiste à créer une partie front et back d'une application pour la gestion des statistiques des joueurs de foot de l'équipe nationale du Togo.
+Ce projet consiste à créer la partie front d'une application pour la gestion des statistiques des joueurs de foot de l'équipe nationale du Togo.
 
      pour réaliser ce projet nous avons construis un API RESFULL.
 
