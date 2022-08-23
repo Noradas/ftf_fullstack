@@ -1,5 +1,5 @@
 # fullstack1
-Ce projet consiste à créer la partie frontend pour la gestion des statistiques des joueurs de foot de l'équipe nationale du Togo.
+Ce projet consiste à créer une partie front et back d'une application pour la gestion des statistiques des joueurs de foot de l'équipe nationale du Togo.
 
      pour réaliser ce projet nous avons construis un API RESFULL.
 
@@ -25,10 +25,10 @@ PACKAGGES INSTALLES:
 
  COMMENT UTILISE:
  
- premierement aller sur mon site en se servant de ce lien https://foot-ftf.netlify.app.
- après avoir eu accès au site il y'a un formulaire qui vous permettra:
+ premierement aller sur le site via le lien https://foot-ftf.netlify.app.
+ Une fois accéder au site,vous y trouverai un formulaire qui vous permettra:
  d'ajouter en cliquant sur "add"
  d'effacer en cliquant sur "delete"
- à regarder ce que vous avez écris en cliquant sur "view"
- pour modifier cliquer sur "edit"
+ de regarder ce que vous avez écrit en cliquant sur "view"
+ et de modifier en cliquant sur "edit"
  
